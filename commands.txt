@@ -1,0 +1,72 @@
+CLI COMMANDS
+
+AP:
+1.	Capwap ap ip add- statically set AP’s IP <A.B.C.D format>.
+2.	Capwap ap ip default-gateway- statically set Default Gateway’s IP <A.B.C.D format>.
+3.	Show controller d0/d1 !-  tx, rx, packets, radio, probes, beacon, crc.
+4.	Show interfaces dot11radio 0/1- radio MAC, pkts.
+5.	Show mesh status- parent,child AP, preferred parent.
+6.	Show mesh adjacency all- all adjacent parents, children.
+7.	Show mesh backhaul- ap backhaul details.
+8.	Show ip int br- ip address of AP and BVI interface details.
+9.	Show mesh security- security/ authentication details of AP.
+10.	Show interfaces- shows details of pkt, MAC of AP, Radio add.
+11.	 Show int | i Hard- MAC add of Ethernet, radios, Virtual WLAN.
+12.	 Show capwap cli rcb- image version, controller connected, ap backhaul, radio, operation state, AP MAC.
+13.	 Show version- image version of LWAPP, AP, flash.
+14.	 Show running-config- shows certificate and crypto details.
+15.	 Show cdp neighbors- shows neighboring APs.
+16.	 Test mesh adjacency parent <MAC Add format H.H.H>- sets it as parent.
+17.	 Test mesh adjacency preferred <MAC Add format H.H.H>- sets preferred parent.
+18.	 Test mesh awpp restart- enables joining of MAP and RAP.
+19.	 Test capwap restart- restarts CAPWAP.
+20.	Capwap ap primary-base <CONTROLLER Name> <Controller MAC>- manually change the controller.
+21.	Debug mesh adjacency channel-
+22.	Debug mesh adjacency parent- 
+23.	No debug <all/ap/etc.>- turns off all debugs.
+
+CONTROLLER:
+1.	Config boot backup/primary- corresponding image is loaded during boot (setting Default image).
+2.	Ping <IP add>- to see response of the device.
+3.	Reset system- resets the whole controller.
+4.	Show ap summary- list of connected APs.
+5.	Show ap stats ethernet <AP Name>- ethernet details (port number, up/down, tx/rx).
+6.	Show ap stats channel <AP Name>- channel details of the AP.
+7.	Show ap config slot <ethernet port number> <AP Name>- details of the AP (image,IOS,IP etc.).
+8.	Show ap ethernet tag summary- shows VLan tags for all APs.
+9.	Show ap environment summary- environment details of all APs.
+10.	Show ap image all- shows images of all APs.
+11.	Show ap slots- shows slot details and AP model names.
+12.	Show ap uptime- shows AP name, MAC add, UP-Time of all APs.
+13.	Show boot- shows primary and backup image versions.
+14.	Show cdp neighbors- shows neighboring devices.
+15.	Show client ap 802.11a/802.11b <AP Name>- shows all clients connected to that AP.
+16.	Show client detail <MAC Add in x:x:x:x:x:x>- shows details of that client.
+17.	Show client summary- shows client details.
+18.	Show dhcp stats- shows DHCP details of controller (DHCP server IP, DHCP tx/rx count etc.).
+19.	Show interface summary- shows details of interfaces (management, test, virtual).
+20.	Show macfilter summary- shows MAC add of all the APs.
+21.	Show memory stats/summary- shows memory details and version of controller.
+22.	Show mesh path <AP Name>- mesh path details.
+23.	Show mesh backhaul <AP Name>- backhaul details.
+24.	Show mesh env summary- environment details of all connected APs. 
+25.	Show mesh ap tree- list of connected APs.
+26.	Show run-config- shows details of controller.
+27.	Show sessions- shows all session details.
+28.	Show sysinfo- shows details of controller (MAC/IP Add, image details, environment details).
+29.	Show wlan summary- shows WLAN ID, profile name, SSID and status of all WLANs.
+30.	Config wlan create <WLAN_ID>- to assign WLAN ID for a new WLAN. 
+31.	Config wlan disable <WLAN_ID/All>- to disable a WLAN.
+32.	Config wlan enable <WLAN_ID/All >- to enable a WLAN.
+33.	Config wlan delete <WLAN_ID/All >- to delete a WLAN.
+
+SWITCH:
+1.	Show run int g 1/0/47- shows switch-port mode (access/trunk), vlan number.
+2.	Show env fan/all/temp/power/stack- shows environment details.
+3.	Show ap summ/cdp/uptime/stat- AP details.
+4.	Show boot- boot info.
+5.	Show ip arp- IP add, MAC add, VLAN details of AP.
+6.	Show cdp neighbors- shows neighboring devices.
+7.	Int gig 1/0/47- to get into the interface mode of that port.
+8.	(config terminal) Shut/ No shut- to shut/ no shut the corresponding port.
+
